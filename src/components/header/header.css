@@ -1,0 +1,152 @@
+.header {
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  background: #141124;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo h2 {
+  margin-bottom: 0;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  list-style: none;
+  column-gap: 2.7rem;
+}
+
+.nav__item a {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav__item a:hover {
+  color: #f5b70a;
+}
+
+.custom__search {
+  display: flex;
+  align-items: center;
+  padding: 10px 25px;
+  height: 35px;
+  border-radius: 50px;
+  background: #0a071a;
+}
+
+.custom__search input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+}
+
+.custom__search span i {
+  cursor: pointer;
+}
+
+.mobile__menu span i {
+  font-size: 1.3rem;
+}
+
+.mobile__menu {
+  display: none;
+}
+
+.cart__icon {
+  position: relative;
+  z-index: 11;
+  width: 40px;
+  height: 30px;
+  border-radius: 5px;
+  background: #f76e11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge {
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  z-index: 12;
+  color: #141124;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+/* ==========  make it responsive ========= */
+
+@media only screen and (max-width: 992px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background: #0a071a7e;
+    display: none;
+  }
+
+  .nav__list__wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 100;
+    background: #141124;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px -5px #f5b70a;
+    justify-content: center !important;
+    padding: 0px 20px;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .nav__item a {
+    font-size: 0.9rem;
+  }
+
+  .header {
+    line-height: 40px;
+    height: 60px;
+    padding: 10px 0px;
+  }
+
+  .custom__search {
+    border: 1px solid #c4c4c425;
+    padding: 5px 15px;
+    font-size: 0.9rem;
+    height: 30px;
+    margin-top: 15px;
+  }
+
+  .mobile__menu {
+    display: block;
+  }
+
+  .logo h2 {
+    font-size: 1.5rem;
+  }
+
+  .active__menu {
+    display: block;
+  }
+}

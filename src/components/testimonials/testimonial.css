@@ -1,0 +1,38 @@
+.single__testimonial h6 {
+  color: #f5b70a;
+  font-size: 1.1rem;
+}
+
+.single__testimonial p {
+  font-size: 0.8rem;
+  color: #fff;
+}
+
+.single__testimonial {
+  padding: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .slider__content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px !important;
+  }
+
+  .single__testimonial p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .slider__wrapper {
+    flex-direction: column;
+  }
+
+  .slider__content {
+    width: 100% !important;
+  }
+
+  .slider__img {
+    display: none;
+  }
+}
