@@ -35,7 +35,7 @@ const Download = () => {
 
                 <button className="btn__google d-flex align-items-center gap-3">
                   <i class="ri-google-play-line"></i>{" "}
-                  <a href="#">Google Play</a>
+                  <a href="https://play.google.com">Google Play</a>
                 </button>
               </div>
             </div>
